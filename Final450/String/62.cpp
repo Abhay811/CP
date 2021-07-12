@@ -1,4 +1,3 @@
-// Count and Say Problem
 
 #include "../temp.h"
 

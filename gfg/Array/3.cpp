@@ -1,9 +1,11 @@
-// function
-// Kadane's algo
-#include "temp.h"
-int solve(vector<int>& a, int n)
+#include "../temp.h"
+
+int maxSubarraySum(int a[], int n)
 {
-    int m = INT_MIN, s = 0;
+
+    // Your code here
+    int s = 0;
+    int m = INT_MIN;
     for (int i = 0; i < n; i++)
     {
         s += a[i];
