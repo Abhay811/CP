@@ -1,5 +1,6 @@
 #include "../temp.h"
 
+// Kadane's Algo
 int maxSubarraySum(int a[], int n)
 {
 

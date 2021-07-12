@@ -1,5 +1,8 @@
 #include "../temp.h"
 
+
+// Merge two sorted arrays
+
 void merge(long long arr1[], long long arr2[], int n, int m)
 {
     // code here

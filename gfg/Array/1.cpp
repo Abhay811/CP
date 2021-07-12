@@ -1,5 +1,7 @@
 #include "../temp.h"
 
+// Subarray with given sum
+
 vector<int> subarraySum(int arr[], int n, int s)
     {
         // Your code here

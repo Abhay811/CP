@@ -1,5 +1,7 @@
 #include "../temp.h"
 
+// Missing number in array
+
 int MissingNumber(vector<int> &array, int n)
 {
     // Your code goes here

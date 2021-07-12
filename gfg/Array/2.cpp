@@ -1,5 +1,7 @@
 #include "../temp.h"
 
+// Count the triplets
+
 int countTriplet(int arr[], int n)
 {
 	int c = 0;

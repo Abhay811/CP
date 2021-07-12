@@ -1,4 +1,3 @@
-
 #include "../temp.h"
 
 int main()
