@@ -1,16 +1,17 @@
 #include "../temp.h"
+void solve(vector<int>& a, int k)
+{
+    unordered_map<int,int> m;
+    for (int i = 0; i < a.size(); ++i)
+        m[a[i]]++;
+    int r = a.size() / k;
+    for (auto it : m)
+        if (it.second >= r)
+            cout << it.first << " ";
 
-
+}
 int main()
 {
-    vector<int> price{2, 30, 15, 10, 8, 25, 80};
-    int s = 0;
-
-    for (int i = 1; i < price.size(); i++)
-    {
-        int t = price[i] - price[i - 1];
-        if (t > 0)
-            s += t;
-    }
-    cout << s << endl;
+    vector<int> a{3,1,2,2,1,2,3,3};
+    solve(a, 4);
 }

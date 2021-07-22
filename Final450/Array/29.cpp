@@ -1,18 +1,22 @@
 #include "../temp.h"
-
-void solve(vector<int>& a, int k)
+int findLongestConseqSubseq(int arr[], int N)
 {
-    unordered_map<int,int> m;
-    for (int i = 0; i < a.size(); ++i)
-        m[a[i]]++;
-    int r = a.size() / k;
-    for (auto it : m)
-        if (it.second >= r)
-            cout << it.first << " ";
+    //Your code here
+    int m = 0;
+    vector<int> a(100001, 0);
+    for (int i = 0; i < N; i++)
+        a[arr[i]] = 1;
 
-}
-int main()
-{
-    vector<int> a{3,1,2,2,1,2,3,3};
-    solve(a, 4);
+    for (int i = 0; i < 100001; i++)
+        if (a[i] == i)
+        {
+            int c = 0;
+            while (a[i] == i)
+                c++, i++;
+
+            if (c > m)
+                m = c;
+            i--;
+        }
+    return m;
 }
