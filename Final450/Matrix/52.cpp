@@ -1,5 +1,6 @@
 #include "../temp.h"
 #define MAX 100
+
 int kthSmallest(int mat[MAX][MAX], int n, int k)
 {
     //Your code here
