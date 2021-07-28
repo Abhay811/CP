@@ -34,6 +34,6 @@ int editDistance(string s, string t)
 
 int main()
 {
-    string s = "gfg", t = "gaek";
+    string s = "gfg", t = "gfg";
     cout << editDistance(s, t);
 }
